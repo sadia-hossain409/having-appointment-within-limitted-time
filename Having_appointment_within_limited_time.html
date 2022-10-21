@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+       body{
+
+background:#ADD8E6;
+text-align: center;
+	
+	}
+	
+	
+h2{
+padding: 5%;
+text-align: center;
+color: white;
+font-family:monospace;
+
+
+}
+.div1{
+
+width: 75px;
+margin: auto;
+padding: 0%;
+}
+
+     
+
+a{
+text-decoration: none;
+
+}
+
+
+
+
+
+        </style>
+
+
+</head>
+<body>
+    <h1 style= " text-align: center; font-family:serif; color: blue; background-color:white;"> We Care <h1/>  <br>
+
+        <h2 style=" text-align:center;"> <a href="file:///C:/Users/HP/Desktop/we_care_u.html" target="_blank"> Home </a>&nbsp; &nbsp; <a href="file:///C:/Users/HP/Desktop/about.html" target="_blank">  About </a> &nbsp; &nbsp; <a href="file:///C:/Users/HP/Desktop/jscodes.html/nodejs/newtmeaccess.html" target="_blank"> Doctors  </a> &nbsp; &nbsp; <a href="file:///C:/Users/HP/Desktop/rul.html" target="_blank"> rules and regulation </a>  &nbsp &nbsp <a href="file:///C:/xampp/htdocs/letest_adminpagewithidpass.html" target="_blank"> Admin </a>  &nbsp &nbsp <a href="file:///C:/xampp/htdocs/blood_donation.html" target="_blank"> Blood donation </a> </h2>
+        
+
+
+
+
+    <h1 > Doctors list </h1> </br> </br>
+    <ul>
+    
+    <li > <p style="color: green;"> <a href="file:///C:/Users/HP/Desktop/doctors_zone.html">Dr Shamim Haider</a> </p>  <p style="color:green"> Brain Stroke, Nerve, Medicine & Neurology Specialist</p> <p style="color:blue;"> <p> MBBS, BCS (Health), D-Ortho
+    Orthopedic & Trauma Surgeon </p>  <p style="color:red";> Availablity: sat-wed, 11.00 am-1.30 pm</p> <br> <h2 > <a class="mycls" href=" " target="_blank"> Have appointment</a>  </h2></li>
+    
+    
+                                             
+    <li > <p style="color: green;"> <a href="file:///C:/Users/HP/Desktop/doctors_zone.html"> Dr Khalirul  </p> </a> <p style="color:green">  Medicine Specialist</p> <p style="color:blue;">  <p> MBBS, FCPS (OBGYN)  </p> <p style="color:red" ;> availiblity:sat-thu, 3.00-5.00pm</p> <h2 > <a class="mycls" href="" target="_blank"> Have appointment</a> </h2> </li>
+    <li > <p style="color: green;"> <a href="file:///C:/Users/HP/Desktop/doctors_zone.html">Dr Malek Murad </a>  </p> <p style="color:green"> Orthopedic Specialist, Injury & Trauma Surgeon </p> <p>  MBBS, D-ORTHO (DU), WHO Fellow (Australia)  </p>  <p style="color:blue;">   <p style="color:red" ;> availiblity:sun-thu, 6.00-8.20pm</p>  <h2 > <a class="mycls" href="" target="_blank"> Have appointment</a> </h2>  </li>
+    <li > <p style="color: green;"> <a href="file:///C:/Users/HP/Desktop/doctors_zone.html"> Dr Tarek Mahmud  </a> </p>  <p style="color:green">Arthritis, Osteoarthritis, Gout, Medicine & Rheumatology Specialist  <p style="color:blue;">  <p>  MBBS (DMC), MD (Neurology)
+    Special Training in Interventional Neurophysiology (EEG, NCS, EMG) </p> </p> </a>  <p style="color:blue;">   <p style="color:red" ;> availiblity:sun-thu, 6.00-8.20pm</p>   <h2 > <a class="mycls"href="" target="_blank"> Have appointment</a> </h2>  </li> 
+    
+    
+    </ul>
+     
+     <h2 style="text-align:center; "> <a href="file:///C:/Users/HP/Desktop/dr_suggestion.html">
+    Doctors Advices</a> </h2>
+    
+    
+    
+    
+    
+    <script>
+
+var date=new Date();
+        var time= date.getHours();
+        
+            
+              
+                
+                    document.querySelectorAll(".mycls")[0].addEventListener("click", function(){
+
+                        if(time >=14 && time<=20){
+                        window.location="file:///C:/xampp/htdocs/apnt.1.html";
+                        }
+                        else{
+                            alert("appointment time is within 2.00pm-7.00pm");
+                        }
+                
+               
+                    });
+
+                    document.querySelectorAll(".mycls")[1].addEventListener("click", function(){
+
+if(time >=11 && time<=19){
+window.location="file:///C:/xampp/htdocs/drapnt2.html";
+}
+else{
+    alert("appointment time is within 11.00pm-7.00pm");
+}
+
+
+});
+       
+document.querySelectorAll(".mycls")[2].addEventListener("click", function(){
+
+if(time >=9 && time<=10){
+window.location="file:///C:/xampp/htdocs/drapnt.3.html";
+}
+else{
+    alert("appointment time is within 9.00am-10.00pm") ;
+}
+
+
+});
+            
+
+document.querySelectorAll(".mycls")[3].addEventListener("click", function(){
+
+if(time >=9 && time<=11){
+window.location="file:///C:/xampp/htdocs/finldr4.html";
+}
+else{
+    alert("appointment time is within 2.00pm-7.00pm");
+}
+
+
+});        
+            
+
+    </script>
+</body>
+</html>
